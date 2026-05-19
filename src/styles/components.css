@@ -4,11 +4,12 @@
 
 #nav {
   position: sticky;
-  top: 0;
+  top: 10px;
   z-index: 100;
   background-color: var(--color-cream);
-  border-bottom: 2px solid var(--color-anthrazite);
+  border-radius: var(--radius-card);
   height: var(--nav-height);
+  margin: 10px 10px 0;
 }
 
 .nav-inner {
@@ -43,16 +44,21 @@
   color: var(--color-anthrazite);
   text-decoration: none;
   font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   white-space: nowrap;
-  padding: 0.25rem 0.5rem;
-  transition: opacity 150ms ease;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius);
+  border: 2px solid transparent;
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  opacity: 0.6;
+  border-color: var(--color-anthrazite);
+  box-shadow: 3px 3px 0 var(--color-anthrazite);
+  transform: translate(-1px, -1px);
 }
 
 .nav-cta {
