@@ -178,23 +178,6 @@
    ABOUT / SERVICES — Mobile First
    ============================================================ */
 
-.hero-card-wrap + #about,
-.section-card-wrap + .section-card-wrap {
-  margin-top: 0;
-}
-
-#about {
-  background-color: var(--color-anthrazite);
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  padding: var(--spacing-lg) 10px 10px;
-}
-
-.about-heading {
-  color: var(--color-cream);
-  padding: 0 var(--spacing-md) var(--spacing-md);
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -204,7 +187,6 @@
 @media (min-width: 600px) {
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
   }
 }
 
@@ -212,24 +194,7 @@
    PROJECTS SECTION — Mobile First
    ============================================================ */
 
-#projects {
-  background-color: var(--color-anthrazite);
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  padding: var(--spacing-lg) 10px 10px;
-}
-
-#projects h2 {
-  color: var(--color-cream);
-  padding: 0 var(--spacing-md) var(--spacing-md);
-}
-
-#projects > .container {
-  padding-bottom: 0;
-}
-
 .featured-projects {
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   gap: 10px;
