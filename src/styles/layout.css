@@ -1,9 +1,23 @@
+/* Hero Card Wrapper */
+.hero-card-wrap {
+  padding: var(--spacing-md);
+  background-color: var(--color-anthrazite);
+}
+
+@media (min-width: 768px) {
+  .hero-card-wrap {
+    padding: 12px;
+  }
+}
+
 /* ============================================================
    HERO — Mobile First
    ============================================================ */
 
 #hero {
-  background-color: var(--color-cream);
+  background: var(--hero-gradient);
+  border-radius: var(--radius-card);
+  overflow: hidden;
 }
 
 /* Mobile: single column, text centered, image below */
@@ -75,6 +89,7 @@
 @media (min-width: 768px) {
   #hero {
     padding: var(--spacing-2xl) 0;
+    border-radius: var(--radius-card);
   }
 
   .hero-inner {
