@@ -1,11 +1,18 @@
 :root {
-  /* Colors */
-  --color-royal-blue: #003D82;
-  --color-warm-orange: #FF9019;
-  --color-anthrazite: #2A2A2A;
-  --color-cream: #F5F1EB;
-  --color-white: #FFFFFF;
+  /* Original palette */
+  --color-royal-blue:   #003D82;
+  --color-warm-orange:  #FF9019;
+  --color-anthrazite:   #2A2A2A;
+  --color-cream:        #F5F1EB;
+  --color-white:        #FFFFFF;
   --color-light-border: #E0DDD8;
+
+  /* Chorke palette additions */
+  --color-lavender:     #D8C8F0;
+  --color-card-yellow:  #F0E040;
+  --color-card-green:   #4DDC7A;
+  --color-card-pink:    #EAD4F8;
+  --hero-gradient: linear-gradient(135deg, var(--color-cream) 0%, var(--color-lavender) 100%);
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -14,19 +21,20 @@
   --font-size-xs: 0.75rem;
 
   /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 0.75rem;
-  --spacing-md: 1.25rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
+  --spacing-xs:  0.5rem;
+  --spacing-sm:  0.75rem;
+  --spacing-md:  1.25rem;
+  --spacing-lg:  2rem;
+  --spacing-xl:  3rem;
   --spacing-2xl: 5rem;
 
   /* Nav */
   --nav-height: 64px;
 
   /* Neobrutalism */
-  --radius: 6px;
+  --radius:       6px;
   --radius-input: 12px;
+  --radius-card:  20px;
   --border-width: 2px;
   --shadow-sm: 3px 3px 0 var(--color-anthrazite);
   --shadow-md: 5px 5px 0 var(--color-anthrazite);
