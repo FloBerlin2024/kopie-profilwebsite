@@ -184,9 +184,14 @@
 }
 
 #about {
-  background-color: var(--color-white);
+  background-color: var(--color-anthrazite);
   border-radius: var(--radius-card);
   overflow: hidden;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+#about h2 {
+  color: var(--color-cream);
 }
 
 .services-grid {
@@ -209,9 +214,14 @@
    ============================================================ */
 
 #projects {
-  background-color: var(--color-white);
+  background-color: var(--color-anthrazite);
   border-radius: var(--radius-card);
   overflow: hidden;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+#projects h2 {
+  color: var(--color-cream);
 }
 
 #projects > .container {
@@ -219,7 +229,11 @@
 }
 
 .featured-projects {
-  background-color: var(--color-cream);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: 0 var(--spacing-md) var(--spacing-md);
 }
 
 /* ============================================================

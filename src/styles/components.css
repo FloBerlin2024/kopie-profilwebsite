@@ -358,11 +358,11 @@
 .service-card {
   position: relative;
   background: var(--color-white);
-  border: var(--border-width) solid var(--color-anthrazite);
-  border-radius: var(--radius-input);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+  border: none;
+  border-radius: var(--radius-card);
+  padding: var(--spacing-lg);
+  box-shadow: none;
+  transition: transform var(--transition);
   overflow: hidden;
 }
 
@@ -383,13 +383,11 @@
 }
 
 .service-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 3px 8px 0 var(--color-anthrazite);
+  transform: translateY(-4px);
 }
 
 .service-card:active {
-  transform: translate(3px, 3px);
-  box-shadow: none;
+  transform: translate(2px, 2px);
 }
 
 .service-card h3 {
@@ -455,9 +453,15 @@
 .featured-project {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: var(--color-cream);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: transform var(--transition);
 }
 
-.featured-project:last-child {}
+.featured-project:hover {
+  transform: translateY(-3px);
+}
 
 .featured-project-image {
   overflow: hidden;
