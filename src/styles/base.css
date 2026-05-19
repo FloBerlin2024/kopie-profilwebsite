@@ -16,7 +16,7 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--color-anthrazite);
-  background-color: var(--color-cream);
+  background-color: var(--color-anthrazite);
   overflow-x: hidden;
   width: 100%;
 }
