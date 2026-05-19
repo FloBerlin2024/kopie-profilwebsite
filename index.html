@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florian Matthias — Lehrer für Geografie & Ethik</title>
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+
+  <!-- Ticker Banner -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+      <span>Jetzt mit Kaffeegeschmack</span>
+      <span class="ticker-dot">☕</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Florian<span>.</span></a>
+      <div class="nav-links">
+        <a href="#projects">Projekte</a>
+        <a href="#about">Über mich</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <a href="#projects" class="nav-mobile-link">Projekte</a>
+    <a href="#about" class="nav-mobile-link">Über mich</a>
+    <a href="#contact" class="nav-mobile-link">Kontakt</a>
+  </div>
+
+  <!-- Mobile Backdrop -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-name">Hi, ich bin Florian.</p>
+        <h1>ICH BIN<br><span class="hero-animate"><span class="hero-animate-track"><span class="hero-animate-word">LEHRER.</span><span class="hero-animate-word">BEGLEITER.</span><span class="hero-animate-word">BERATER.</span><span class="hero-animate-word">ORGANISATOR.</span><span class="hero-animate-word">KI-ENTHUSIAST.</span><span class="hero-animate-word">DESIGNER.</span><span class="hero-animate-word">LEHRER.</span></span></span></h1>
+        <p class="hero-desc">Lehrer für Geografie & Ethik aus Brandenburg — mit Leidenschaft für digitale Bildung, kritisches Denken und echte Lernfreude.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-outline btn-hero-contact">Kontakt aufnehmen</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./src/assets/images/collage.png"
+          alt="Florian Matthias"
+          class="hero-photo-img"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Services Section -->
+  <section id="about">
+    <div class="container">
+      <h2>Was ich mitbringe</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Geografie & Erdkunde</h3>
+          <p>Vom lokalen Raum bis zur globalen Vernetzung — ich mache Geografie greifbar, aktuell und relevant für die Lebenswelt meiner Schülerinnen und Schüler.</p>
+          <a href="#contact" class="service-link">Kontakt aufnehmen →</a>
+        </div>
+        <div class="service-card">
+          <h3>Ethik & Philosophie</h3>
+          <p>Kritisches Denken, Wertediskussion und ethische Urteilsbildung — ich begleite junge Menschen beim Finden ihrer eigenen Haltung in einer komplexen Welt.</p>
+          <a href="#contact" class="service-link">Kontakt aufnehmen →</a>
+        </div>
+        <div class="service-card">
+          <h3>Digitale Bildung</h3>
+          <p>KI, digitale Tools und moderne Lernmethoden im Unterricht — ich bringe Technikbegeisterung in den Klassenraum und mache digitale Kompetenz erfahrbar.</p>
+          <a href="#contact" class="service-link">Kontakt aufnehmen →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Ausgewählte Projekte</h2>
+    </div>
+    <div class="featured-projects" id="projects-container">
+      <!-- Projects rendered by JS -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Schreib mir<br>eine Nachricht.</h2>
+          <p>Ob Austausch mit Kolleginnen und Kollegen, Rückfragen oder Kooperationsideen — ich freue mich über Nachrichten. Ich antworte innerhalb von 2–3 Werktagen.</p>
+          <p class="contact-email-label">Schreib mir</p>
+          <a href="mailto:florian@example.com" class="contact-email-link">florian@example.com</a>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required maxlength="100" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="E-Mail" required maxlength="254" autocomplete="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Nachricht</label>
+              <textarea id="message" name="message" placeholder="Nachricht" required maxlength="2000"></textarea>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary form-submit">Nachricht senden</button>
+            </div>
+            <div id="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">Florian<span>.</span></a>
+      <p class="footer-copy">Florian Matthias · Lehrer für Geografie & Ethik</p>
+      <span class="footer-right">&copy; 2026 Florian Matthias</span>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Nach oben scrollen">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

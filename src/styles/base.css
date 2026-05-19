@@ -1,0 +1,79 @@
+@import url('variables.css');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-anthrazite);
+  background-color: var(--color-cream);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+/* Mobile first — scale up */
+h1 { font-size: clamp(2.6rem, 11vw, 6rem); }
+h2 { font-size: clamp(1.6rem, 5vw, 2.5rem); margin-bottom: var(--spacing-lg); }
+h3 { font-size: 1.1rem; margin-bottom: var(--spacing-sm); letter-spacing: -0.01em; }
+
+p {
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+section {
+  width: 100%;
+  padding: 0;
+}
+
+/* Mobile padding */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Desktop padding */
+@media (min-width: 768px) {
+  .container {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+  }
+
+  h2 {
+    margin-bottom: var(--spacing-xl);
+  }
+}

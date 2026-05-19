@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "defaultMode": "auto",
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(npm run:*)",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(sed -i '' 's|href=\"\"./styles/|href=\"\"./src/styles/|g' /Users/florian/Dropbox/WORKSPACE/Portfoliowebsite/index.html)",
+      "Bash(sed -i '' 's|src=\"\"./main.js\"\"|src=\"\"./src/main.js\"\"|g' /Users/florian/Dropbox/WORKSPACE/Portfoliowebsite/index.html)",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_run_code"
+    ]
+  }
+}
