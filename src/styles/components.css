@@ -7,7 +7,7 @@
   top: 0;
   z-index: 100;
   background-color: var(--color-cream);
-  border-bottom: none;
+  border-bottom: 2px solid var(--color-anthrazite);
   height: var(--nav-height);
 }
 
@@ -43,22 +43,16 @@
   color: var(--color-anthrazite);
   text-decoration: none;
   font-size: 0.875rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   white-space: nowrap;
-  padding: 0.25rem 0.75rem;
-  border-radius: 6px;
-  border: 2px solid transparent;
-  box-shadow: none;
-  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+  padding: 0.25rem 0.5rem;
+  transition: opacity 150ms ease;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  border-color: var(--color-anthrazite);
-  box-shadow: 3px 3px 0 var(--color-anthrazite);
-  transform: translate(-1px, -1px);
+  opacity: 0.6;
 }
 
 .nav-cta {
@@ -364,6 +358,9 @@
   box-shadow: none;
   transition: transform var(--transition);
   overflow: hidden;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card::before {
