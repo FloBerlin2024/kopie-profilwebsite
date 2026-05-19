@@ -1,22 +1,17 @@
-/* Card Wrapper — jede Section bekommt diesen dunklen Rand */
-.hero-card-wrap,
-.section-card-wrap {
+/* Page Cards Container — einheitlicher 10px Abstand überall */
+.page-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 10px;
   background-color: var(--color-anthrazite);
 }
 
-.hero-card-wrap {
-  padding-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .hero-card-wrap,
-  .section-card-wrap {
-    padding: 10px;
-  }
-  .hero-card-wrap {
-    padding-bottom: 0;
-  }
+/* Card Wrappers — nur noch Radius + Clip, kein Padding */
+.hero-card-wrap,
+.section-card-wrap {
+  border-radius: var(--radius-card);
+  overflow: hidden;
 }
 
 /* ============================================================
@@ -25,8 +20,6 @@
 
 #hero {
   background: var(--hero-gradient);
-  border-radius: var(--radius-card);
-  overflow: hidden;
 }
 
 /* Mobile: single column, text centered, image below */
@@ -206,8 +199,6 @@
 
 #contact {
   background-color: var(--color-white);
-  border-radius: var(--radius-card);
-  overflow: hidden;
 }
 
 /* Mobile: stacked */
@@ -271,8 +262,6 @@
 
 footer {
   background-color: var(--color-anthrazite);
-  border-radius: var(--radius-card);
-  overflow: hidden;
 }
 
 /* Mobile: stacked center */
