@@ -22,13 +22,13 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 /* Mobile first — scale up */
-h1 { font-size: clamp(2.6rem, 11vw, 6rem); }
+h1 { font-size: clamp(2.8rem, 8vw, 5.5rem); }
 h2 { font-size: clamp(1.6rem, 5vw, 2.5rem); margin-bottom: var(--spacing-lg); }
 h3 { font-size: 1.1rem; margin-bottom: var(--spacing-sm); letter-spacing: -0.01em; }
 
