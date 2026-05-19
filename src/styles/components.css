@@ -438,6 +438,16 @@
   }
 }
 
+.service-card--yellow { background-color: var(--color-card-yellow); }
+.service-card--green  { background-color: var(--color-card-green); }
+.service-card--pink   { background-color: var(--color-card-pink); }
+
+.service-card--yellow::before,
+.service-card--green::before,
+.service-card--pink::before {
+  background-image: radial-gradient(circle, rgba(42, 42, 42, 0.18) 1px, transparent 1px);
+}
+
 /* ============================================================
    FEATURED PROJECT ROWS — Mobile First: single column
    ============================================================ */
@@ -661,5 +671,62 @@
     height: 48px;
     bottom: 2rem;
     right: 2rem;
+  }
+}
+
+/* Badge sticker */
+.hero-badge {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: var(--color-card-yellow);
+  border: var(--border-width) solid var(--color-anthrazite);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 12%;
+  left: 5%;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.hero-badge:hover {
+  transform: rotate(15deg) scale(1.05);
+}
+
+.hero-badge-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: badge-spin 10s linear infinite;
+}
+
+.hero-badge-ring text {
+  font-size: 13px;
+  font-weight: 700;
+  fill: var(--color-anthrazite);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-badge-arrow {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-anthrazite);
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes badge-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (max-width: 767px) {
+  .hero-badge {
+    display: none;
   }
 }
